@@ -1,0 +1,58 @@
+h1 {text-shadow: 1px 1px #000; font-size:30px; color:#ddd; text-align:center;}
+h2 {font-size:20px; color:white; text-align: center;}
+
+.navbar-collapse.collapse {float:none;}
+.button-container {width:90%; margin:0 auto;}
+.social-container {width:90%; margin:0 auto;}
+@media (min-width: 768px) {
+	.navbar-collapse.collapse {float:right;}
+	.button-container {width:100%;}
+}
+
+.navbar-brand,
+.navbar-brand:focus,
+.navbar-brand:hover,
+.navbar-brand:active,
+.navbar-nav>li>a,
+.dropdown-menu>li>a {color:white; text-shadow: none; cursor:default;}
+
+.nav>li>a:focus,
+.nav>li>a:hover,
+.nav>li>a:active,
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:active, 
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:active {color:white; background: #333;}
+.dropdown-menu>li>a,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:active {cursor:default;}
+.dropdown-menu {background: transparent;}
+.nav .open>a:focus {background:#000;}
+
+.img-container {
+	height: 100vh;
+	background: url(../img/header.jpg) no-repeat center center;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.content {
+	height: 100vh;
+}
+.photo {
+	width:200px;
+	height: 200px;
+	border-radius:50%;
+	box-shadow: 4px 6px 1px 1px #333;
+}
+
+footer p {
+	text-align: center;
+	color:white;
+}
+
+.icon-bar {border:2px solid white;}
