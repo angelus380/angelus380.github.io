@@ -40,9 +40,20 @@
     -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-#f1_container:hover #f1_card {
-  transform: rotateY(180deg);
-}
+
+  @media (min-width: 768px) {
+    #f1_container:hover #f1_card {
+      transform: rotateY(180deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+    #f1_container:active #f1_card {
+      transform: rotateY(180deg);
+    }
+  }
+
+
 .face {
   position: absolute;
   width: 100%;
