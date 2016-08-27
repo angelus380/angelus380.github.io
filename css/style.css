@@ -7,11 +7,12 @@ html {
   background-size: cover;
 }
 body {
+	height: 100%;
 	background-color: transparent;
 	font-family: 'Slabo 27px', serif;
 }
 .main-content {
-	height: 100vh;
+	height: 100%;
 }
 
 h1.name { font-size:350%; color:#fff; text-align:center; display: block;}

@@ -43,12 +43,20 @@
 
   @media (min-width: 768px) {
     #f1_container:hover #f1_card {
+      -ms-transform: rotateY(180deg); /* IE 9 */
+      -webkit-transform: rotateY(180deg); /* Safary & chrome */
+      -moz-transform: rotateY(180deg); /* Firefox */
+      -o-transform: rotateY(180deg); /* Opera */
       transform: rotateY(180deg);
     }
   }
 
   @media (max-width: 768px) {
     #f1_container:active #f1_card {
+      -ms-transform: rotateY(180deg); /* IE 9 */
+      -webkit-transform: rotateY(180deg); /* Safary & chrome */
+      -moz-transform: rotateY(180deg); /* Firefox */
+      -o-transform: rotateY(180deg); /* Opera */
       transform: rotateY(180deg);
     }
   }
