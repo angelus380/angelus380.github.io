@@ -33,7 +33,7 @@ p.click {
 		li.option { font-size: 20px; }
 	}
 
-#contact-info {	margin-top:60px; }
+#contact-info {	margin: 40px 0; }
 #contact-info p {
 	color:#fff;
 	font-size:20px;
