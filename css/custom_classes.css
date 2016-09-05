@@ -1,0 +1,69 @@
+/**/
+/* basic classes */
+/**/
+
+/* calculation */
+.calculation {
+	height: -moz-calc(100% - 18px); /* Firefox */
+	height: -webkit-calc(100% - 18px); /* WebKit */
+	height: -o-calc(100% - 18px); /* Opera */
+	height: calc(100% - 18px); /* Standard */
+}
+/* opacity */
+.opacity {
+	-khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:"alpha(opacity=50)";
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50;
+}
+/* background */
+.background{
+
+}
+.background-img {
+	background: url(../img/sample.jpg) no-repeat center center;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* box */
+.border {
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,.15);
+}
+.border-radius {
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+.box-shadow {
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+/* text */
+.white-space-nowrap {
+	white-space: nowrap;
+}
+.prevent-text-bluring {
+	-ms-transform: perspective(1px) scale(1);
+    -webkit-transform: perspective(1px) scale(1);
+	transform: perspective(1px) scale(1);
+}
+
+/* animations */
+.transitions {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+    transition:all 0.3s ease;
+}
+.transform {
+	-ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+}
