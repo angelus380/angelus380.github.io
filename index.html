@@ -1,163 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- meta data -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- mobile responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-	<title>Sample Site</title>
-  <!-- css files -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="css/flexbox.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Delmar Almeida</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link href="vendor/animate/animate.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
+<body id="page-top" class="index">
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span id="top-menu">MENU</span>
-          <i class="fa fa-bars"></i>
-        </button>
-        <a class="navbar-brand" href="#scrollTop">Brand</a>
-      </div>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">D.</a>
+            </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="scrollTo" href="#services">Services</a></li>
-          <li><a class="scrollTo" href="#contact">Contact</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-  
-  <header>
-    <div class="content flex justify-center align-center column">
-      <div>
-        <h1>Startup technological freelancer</h1>
-        <hr>
-        <p>We are freelancers working in webdevelopment</p>
-        
-      </div>
-      <a id="down-btn" class="scrollTo" href="#services">
-        <span class="glyphicon glyphicon-chevron-down animated infinite bounce"></span>
-      </a>
-    </div>
-  </header>
-
-  <section id="services">
-    <div class="content flex align-center column">
-      <div>
-        <h2>Our services</h2>
-        <hr>
-      </div>
-
-      <div class="flex wrap justify-center">
-
-        <div class="service flex justify-center align-center column">
-          <div class="icon">
-            <i class="fa fa-pencil fa-4x"></i>
-            <i class="fa fa-code fa-4x"></i>
-          </div>
-          <p>Web Design &</p>
-          <p>Development</p>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Serviços</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfólio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Sobre Mim</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-        <div class="service flex justify-center align-center column">
-          <div class="icon">
-            <i class="fa fa-desktop fa-4x"></i>
-            <i class="fa fa-mobile fa-4x"></i>
-          </div>
-          <p>Desktop &</p>
-          <p>Mobile UX</p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">Delmar Almeida</div>
+                <hr>
+                <div class="intro-lead-in">Web Developer</div>
+                <a href="#services" class="page-scroll"><span class="glyphicon glyphicon-chevron-down animated infinite bounce"></span></a>
+            </div>
         </div>
+    </header>
 
-        <div class="service flex justify-center align-center column">
-          <div class="icon">
-            <i class="fa fa-desktop fa-4x"></i>
-            <i class="fa fa-mobile fa-4x"></i>
-          </div>
-          <p>Animations</p>
-          <p>for the web</p>
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Serviços</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Desenvolvimento Web</h4>
+                    <p class="text-muted">Desenvolvimento de wesites adaptados a vários browsers e a dispositivos mobile.</p>
+                    <p class="last"><strong>Serviço aconselhado a qualquer empresa.</strong></p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Lojas-online</h4>
+                    <p class="text-muted">Criação de lojas-online mediante o modelo de negócio do cliente.</p>
+                    <p class="last"><strong>Solução para expandir o seu negócio.</strong></p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Prototipagem</h4>
+                    <p class="text-muted">Apoio no desenvolvimento de protótipos para viabilizar uma ideia de negócio.</p>
+                    <p class="last"><strong>Solução para Startups.</strong></p>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Trabalhos</h2>
+                    <h3 class="section-subheading text-muted">Alguns dos meus trabalhos</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/lj.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Landing Jobs</h4>
+                        <p class="text-muted">Yourfit Calculator</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/etukminho.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Etukminho</h4>
+                        <p class="text-muted">Website</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="about" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading col-sm-12">Sobre Mim</h2>
+                </div>
+            </div>
+            <div class="row float-left">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/about/delmar.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Delmar Almeida</h4>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://twitter.com/delmar380"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://pt.linkedin.com/in/delmar-almeida-7009645b"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="https://github.com/angelus380"><i class="fa fa-github-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contacto</h2>
+                    <h3 class="section-subheading text-muted">Precisa de um site, loja online, ou tem um projeto que pretende desenvolver ligado à web, fale comigo</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="mailto:angelusdelmar@gmail.com" target="_blank"><i class="fa fa-send fa-3x"></i></a>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">DelmarAlmeida Web Developer &copy;</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Yourfit Calculator</h2>
+                                <p class="item-intro text-muted">Uma ferramenta de cálculo para a avaliação de candidatos.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/yourfit-tool.png" alt="">
+                                <p>Ferramenta de cáculo desenvolvida para a empresa <a href="https://landing.jobs/">Landing Jobs</a> para ajudar na avaliação de perfis de candidatos na área da programação e tecnologias de informação. Este trabalho foi desenvolvido em HTML, CSS, Javascript e jQuery, inicialmente pensado e contruidos para Desktop foi depois adaptado para uma versão Mobile.</p>
+                                <p>Veja o resultado final no seguinte link <a href="https://landing.jobs/yourfit/calculator">https://landing.jobs/yourfit/calculator</a>.</p>
+                                
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
-  
-  <section id="about">
-    <div class="content flex justify-center column">
-      <div>
-        <h2>About Us</h2>
-        <hr>
-        <p>A little about me</p>
-      </div>
-      <div class="text-box">
-        <p>I live in Braga, a beautifull city.</p>
-        <p>In the last year I learned how to code at Creators School, a 2 week course that took place in Oporto, and after that I've been working in development and front-end projects.</p>
-        <p>I used to work as a Designer but when I started my own startups I felt the need to read and learn a bit about programming, when my last project became unsustainable I decided to learn how to build my own products and prototypes. </p>
-      </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Etukminho</h2>
+                                <p class="item-intro text-muted">website Empresarial</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/etukminho-preview.png" alt="">
+                                <p>Website para a empresa <a href="">Etukminho</a> para ajudar na avaliação de perfis de candidatos na área da programação e tecnologias de informação.</p>
+                                <p>Veja o resultado final no seguinte link <a href="https://landing.jobs/yourfit/calculator">https://landing.jobs/yourfit/calculator</a>.</p>
+                                
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <section id="social">
-    <div class="content flex justify-center">
-      <div>
-        <h2>Social networking</h2>
-        <hr>
-        <p>Find us here</p>
-      </div>
-    </div>
-  </section>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-  <section id="contact">
-    <div class="content flex justify-center column">
-      <div>
-        <h2>Contact Us</h2>
-        <hr>
-      </div>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-      <div class="flex justify-center align-center column">
-        <p>We're available for freelance work, let us hear about your projects.</p>
-        <a href="mailto:angelusdelmar@gmail.com" target="_blank"><i class="fa fa-send fa-3x"></i></a>
-        <p>email</p>   
-      </div>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    </div>
-  </section>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-  <footer>
-    <div class="content">
-      <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-      <a href=""><i class="fa fa-github-alt fa-2x"></i></a>
-      <a href=""><i class="fa fa-linkedin fa-2x"></i></a>
-      <div><p>&copy; 2016 CompanyName. All Rights Reserved</p></div>
-    </div>
-  </footer>
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
 
-<!-- js files -->
-  <script src="js/jquery-3.1.0.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
 </body>
+
 </html>
