@@ -6,7 +6,9 @@
 body {
   overflow-x: hidden;
 }
-body > * {font-family:monospace;}
+body > * {
+  font-family: monospace;
+}
 .text-muted {
   color: #777777;
 }
@@ -78,8 +80,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: lightgreen;
-  border-color: lightgreen;
+  background-color: cadetblue;
+  border-color: cadetblue;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -350,6 +352,9 @@ section h3.section-subheading {
   font-weight: 400;
   margin-bottom: 75px;
 }
+section > *{
+  text-align:left!important;
+}
 @media (min-width: 768px) {
   section {
     padding: 150px 0;
@@ -610,7 +615,31 @@ aside.clients img {
   margin: 50px auto;
 }
 section#about {
-  background: url(../img/about/pool.jpg) no-repeat center center;
+  position:relative;
+  background-image: url(../img/about/pool.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section#about .fog-img {
+  background: rgba(0,0,0,0.6);
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+}
+section#about h2,
+section#about h4,
+section#about p {
+  color:#eee;
+}
+section#about p a {
+  color:lightgreen;
 }
 section#about .float-left {
   float:left;
@@ -625,17 +654,40 @@ section#about .float-left {
   }
 }
 section#contact {
-  background-color: #222222;
+  border-top: 3px solid #eee;
+
+  background-color: #333;
   background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
-section#contact .section-heading {
-  color: white;
+section#contact .section-heading,
+section#contact .section-subheading  {
+  color: #fff;
 }
-section#contact a { color: cadetblue; }
-section#contact a:hover,
-section#contact a:active { color: lightgreen; }
+section#contact a i {
+  color: #fff;
+  background-color: cadetblue;
+  padding: 10px;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition:all 0.3s ease;
+}
+section#contact a i:hover,
+section#contact a i:focus {
+  background-color:lightgreen;
+
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
 section#contact .form-group {
   margin-bottom: 25px;
 }
@@ -742,6 +794,14 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
+}
+.portfolio-modal .modal-content p.modal-info {
+  text-align:left;
+}
+@media (min-width: 768px) {
+  .portfolio-modal .modal-content p.modal-info {
+    text-align:center;
+  }
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
