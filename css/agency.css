@@ -32,11 +32,6 @@ p.last {
 .text-center .col-md-4:last-of-type p.last{
   margin:auto;
 }
-@media (min-width: 768px) {
-  p.last {
-    margin-bottom:0;
-  }
-}
 a,
 a:hover,
 a:focus,
@@ -271,6 +266,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
+  position: relative;
   height:100vh;
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
@@ -323,9 +319,12 @@ header span {
   border: 2px solid cadetblue;
 }
 @media (min-width: 768px) {
+  header {
+    height: inherit;
+  }
   header .intro-text {
-    padding-top: 250px;
-    padding-bottom: 200px;
+    padding-top: 220px;
+    padding-bottom: 250px;
   }
   header .intro-text .intro-lead-in {
     font-size: 250%;
