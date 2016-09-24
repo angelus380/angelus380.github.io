@@ -267,25 +267,23 @@ fieldset[disabled] .btn-xl.active {
 
 header {
   position: relative;
-  height:100vh;
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+
   text-align: center;
   color: white;
 }
-header .container {
-  height: 100%;
-}
+
 header .intro-text {
-  height: 100%;
-  padding-top: 250px;
-  padding-bottom: 50px;
+  padding-top: 230px;
+  padding-bottom: 250px;
 }
 header .intro-text .intro-lead-in {
   font-size: 210%;
@@ -305,8 +303,8 @@ header .intro-text hr {
   max-width:50px;
 }
 header a {
-  position:absolute;
-  bottom:20px;
+  position: absolute;
+  bottom: 90px;
   left: -moz-calc(50% - 20px);
   left: -webkit-calc(50% - 20px);
   left: -o-calc(50% - 20px);
@@ -319,9 +317,6 @@ header span {
   border: 2px solid cadetblue;
 }
 @media (min-width: 768px) {
-  header {
-    height: inherit;
-  }
   header .intro-text {
     padding-top: 220px;
     padding-bottom: 250px;
