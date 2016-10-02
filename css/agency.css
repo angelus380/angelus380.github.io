@@ -771,6 +771,9 @@ ul.social-buttons li a:active {
 .btn:active:focus {
   outline: none;
 }
+.portfolio-modal.modal-open.modal {
+  overflow-y: overlay;
+}
 .portfolio-modal .modal-dialog {
   margin: 0;
   height: 100%;
@@ -812,6 +815,7 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
+  width: 300px;
 }
 .portfolio-modal .close-modal {
   position: absolute;
@@ -826,7 +830,7 @@ ul.social-buttons li a:active {
   opacity: 0.3;
 }
 .portfolio-modal .close-modal .lr {
-  height: 75px;
+  height: 35px;
   width: 1px;
   margin-left: 35px;
   background-color: #222222;
@@ -838,7 +842,7 @@ ul.social-buttons li a:active {
   z-index: 1051;
 }
 .portfolio-modal .close-modal .lr .rl {
-  height: 75px;
+  height: 35px;
   width: 1px;
   background-color: #222222;
   transform: rotate(90deg);
@@ -851,6 +855,15 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+@media (min-width: 768px) {
+  .portfolio-modal.modal {
+    width: 500px;
+    margin: 2% auto;
+  }
+  .portfolio-modal .container {
+    width: 100%;
+  }
 }
 ::-moz-selection {
   text-shadow: none;
