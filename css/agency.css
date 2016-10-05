@@ -13,6 +13,12 @@ body {
 body > * {
   font-family: 'Roboto-Regular';
 }
+.pt {
+ 
+}
+.en {
+  display: none;
+}
 .text-muted {
   color: #777777;
 }
@@ -210,6 +216,8 @@ fieldset[disabled] .btn-xl.active {
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
+  padding: 10px 0;
+  margin: 0 10px;
   border-bottom:2px solid transparent;
 }
 .navbar-custom .nav li a:hover,
@@ -358,9 +366,46 @@ section > *{
     padding: 150px 0;
   }
 }
+#services {
+  padding-top: 0;
+}
+#services h2 {
+  margin-top: 50px;
+}
+.language-selector {
+  padding: 20px 0;
+  background-color: #333;
+  color: #f1f1f1;
+}
+.language-selector .row{
+  float: right;
+  margin: 0 auto;
+}
+.language-selector .lang-btn {
+  float: left;
+  padding: 12px 20px;
+  background-color: cadetblue;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+}
+.language-selector .lang-btn:last-of-type {
+  border-right: 0;
+  border-left: 1px solid #fff;
+}
+.language-selector .lang-btn:hover,
+.language-selector .lang-btn:focus,
+.language-selector .lang-btn.active {
+  background-color: #226D70;
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+@media (min-width: 768px) {
+  .language-selector {
+    padding: 50px 0;
+  }
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -636,6 +681,10 @@ section#about h4,
 section#about p {
   color:#eee;
 }
+section#about h2 {
+  padding: 0;
+  text-align: center;
+}
 section#about p a {
   color:lightgreen;
 }
@@ -644,6 +693,9 @@ section#about .float-left {
   padding-top: 10px;
 }
 @media (min-width: 768px) {
+  section#about h2 {
+    text-align: left;
+  }
   section#about .float-left {
     float:left;
   }
@@ -665,8 +717,9 @@ section#contact .section-subheading  {
 }
 section#contact a i {
   color: #fff;
-  background-color: cadetblue;
-  padding: 10px;
+  background-color: #222;
+  padding: 13px;
+  font-size: 20px;
 
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -678,13 +731,9 @@ section#contact a i {
   -ms-transition: all 0.3s ease;
   transition:all 0.3s ease;
 }
-section#contact a i:hover,
-section#contact a i:focus {
-  background-color:lightgreen;
-
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
+section#contact a:hover i,
+section#contact a:focus i {
+  background-color: cadetblue;
 }
 section#contact .form-group {
   margin-bottom: 25px;
@@ -796,13 +845,8 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
 }
-.portfolio-modal .modal-content p.modal-info {
-  text-align:left;
-}
-@media (min-width: 768px) {
-  .portfolio-modal .modal-content p.modal-info {
-    text-align:center;
-  }
+.portfolio-modal .modal-content p.info-text {
+  text-align: justify;
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;

@@ -6,22 +6,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Delmar Almeida Services Website, get a beautifull website done from me!">
+    <meta name="author" content="Delmar Almeida">
 
-    <title>Delmar Almeida</title>
+    <title>Delmar Almeida - Webdeveloper</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Animate CSS -->
-    <link href="vendor/animate/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!-- Morphext CSS -->
+    <link href="css/morphext.css" rel="stylesheet" type="text/css">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -53,16 +56,28 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Serviços</a>
+                        <a class="page-scroll" href="#services">
+                            <span class="pt">Serviços</span>
+                            <span class="en">Services</span>
+                        </a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfólio</a>
+                        <a class="page-scroll" href="#portfolio">
+                            <span class="pt">Portfolio</span>
+                            <span class="en">My Work</span>
+                        </a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Sobre Mim</a>
+                        <a class="page-scroll" href="#about">
+                            <span class="pt">Sobre Mim</span>
+                            <span class="en">About Me</span>
+                        </a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contacto</a>
+                        <a class="page-scroll" href="#contact">
+                            <span class="pt">Contacto</span>
+                            <span class="en">Contact</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -77,7 +92,7 @@
             <div class="intro-text">
                 <h1 class="intro-heading">Delmar Almeida</h1>
                 <hr>
-                <h2 class="intro-lead-in">Web Developer</h2>
+                <h2 class="intro-lead-in">WebDeveloper</h2>
                 <a href="#services" class="page-scroll"><span class="glyphicon glyphicon-chevron-down animated infinite bounce"></span></a>
             </div>
         </div>
@@ -85,10 +100,19 @@
 
     <!-- Services Section -->
     <section id="services">
+        <aside class="language-selector">
+            <div class="container">
+                <div class="row">
+                    <div id="pt" class="active lang-btn">PT</div>
+                    <div id="en" class="lang-btn">EN</div>
+                </div>
+            </div>
+        </aside>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Serviços</h2>
+                    <h2 class="section-heading pt">Serviços</h2>
+                    <h2 class="section-heading en">Services</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
@@ -98,9 +122,13 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Desenvolvimento Web</h4>
-                    <p class="text-muted">Desenvolvimento de wesites adaptados a vários browsers e a dispositivos mobile.</p>
-                    <p class="last"><strong>Solução para empresas</strong></p>
+                    <h4 class="service-heading pt">Desenvolvimento Web</h4>
+                    <p class="text-muted pt">Design e desenvolvimento de wesites adaptados a vários browsers e dispositivos mobile.</p>
+                    <p class="last pt"><strong>Solução para empresas</strong></p>
+
+                    <h4 class="service-heading en">Web Development</h4>
+                    <p class="text-muted en">Design and development of responsive websites for desktop and mobile devices.</p>
+                    <p class="last en"><strong>Business solution</strong></p>
                 </div>
                 
                 <div class="col-md-4 col-md-offset-2">
@@ -108,9 +136,13 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Prototipagem</h4>
-                    <p class="text-muted">Apoio no desenvolvimento de protótipos para viabilizar uma ideia de negócio.</p>
-                    <p class="last"><strong>Solução para Startups</strong></p>
+                    <h4 class="service-heading pt">Prototipagem</h4>
+                    <p class="text-muted pt">Design e desenvolvimento de protótipos para viabilizar uma ideia de negócio.</p>
+                    <p class="last pt"><strong>Solução para Startups</strong></p>
+
+                    <h4 class="service-heading en">Prototyping</h4>
+                    <p class="text-muted en">Design and development of prototypes for business and market validation.</p>
+                    <p class="last en"><strong>Startup solution</strong></p>
                 </div>
             </div>
         </div>
@@ -121,8 +153,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Trabalhos</h2>
-                    <h3 class="section-subheading text-muted">Alguns dos meus trabalhos</h3>
+                    <h2 class="section-heading pt">Portfolio</h2>
+                    <h3 class="section-subheading text-muted pt">Alguns dos meus últimos trabalhos</h3>
+
+                    <h2 class="section-heading en">Portfolium</h2>
+                    <h3 class="section-subheading text-muted en">Some of my latest work</h3>
                 </div>
             </div>
             <div class="row">
@@ -163,8 +198,10 @@
         <div class="fog-img"></div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading col-sm-12">Sobre Mim</h2>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-6">
+                    <h2 class="section-heading col-sm-12 pt">Sobre Mim</h2>
+                    <h2 class="section-heading col-sm-12 en">About Me</h2>
                 </div>
             </div>
             <div class="row float-left">
@@ -183,7 +220,9 @@
                     </div>
                 </div>
                 <div class="col-sm-8">
-                    <p class="large text-muted">Em 2015 decidi mudar de carreira e entrei no mundo da programação web através do curso <a href="http://creatorsschool.com/" target="_blank"><strong>Creators School</strong></a>, onde aprendi a trabalhar com diversas tecnologias web focadas em ruby-on-rails. Desde então tenho trabalhado em diversos projetos onde fui desenvolvendo capacidades de trabalho em <strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, <strong>jQuery</strong>, <strong>Bootstrap</strong>, <strong>SQL</strong> e <strong>WordPress</strong>.<br>O foco do meu trabalho está no desenvolvimento de soluções apropriadas ao modelo de negócio do cliente.</p>
+                    <p class="large text-muted pt">Em 2015 decidi mudar de carreira e entrei no mundo da programação web através do curso <a href="http://creatorsschool.com/" target="_blank"><strong>Creators School</strong></a>, onde aprendi a trabalhar com diversas tecnologias web focadas em ruby-on-rails. Desde então tenho trabalhado em diversos projetos onde fui desenvolvendo a minha perícia a trabalhar com <strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, <strong>jQuery</strong>, <strong>Bootstrap</strong>, <strong>SQL</strong> e <strong>WordPress</strong>.<br>O foco do meu trabalho está no desenvolvimento de soluções apropriadas ao modelo de negócio do cliente.</p>
+
+                    <p class="large text-muted en">In 2015 I decided to change careers and entered the world of web programming through the course <a href="http://creatorsschool.com/" target="_blank"><strong>Creators School</strong></a>, where I learned to work with various web technologies focused on <strong>Ruby-On-Rails</strong>. Since then I have worked on several projects where  I developed my expertise working with <strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, <strong>jQuery</strong>, <strong>Bootstrap</strong>, <strong>SQL</strong> and <strong>WordPress</strong>.<br>I focus my work in developing appropriate solutions to the client's business model.</p>
                 </div>
             </div>
         </div>
@@ -194,13 +233,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contacto</h2>
-                    <h3 class="section-subheading text-muted">Precisa de um site ou tem um projeto que pretende desenvolver ligado à área web?<br><hr>Entre em contacto comigo</h3>
+                    <h2 class="section-heading pt">Contacto</h2>
+                    <h3 class="section-subheading text-muted pt">Precisa de um site ou tem um projeto que pretende desenvolver para o seu negócio?<br>Entre em contacto comigo.</h3>
+
+                    <h2 class="section-heading en">Contact</h2>
+                    <h3 class="section-subheading text-muted en">Do you need a website or a project to be developed for your business?<br>Feel free to contact me.</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <a href="mailto:angelusdelmar@gmail.com" target="_blank"><i class="fa fa-send fa-3x"></i></a>
+                    <a href="mailto:angelusdelmar@gmail.com" target="_blank"><i class="fa fa-send fa-3x"> angelusdelmar@gmail</i></a>
                 </div>                
             </div>
         </div>
@@ -234,12 +276,21 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Yourfit Calculator</h2>
-                                <p class="item-intro text-muted">Uma ferramenta de cálculo para a avaliação de candidatos.</p>
+                                <p class="item-intro text-muted pt">Uma ferramenta de cálculo para a avaliação de candidatos.</p>
+                                <p class="item-intro text-muted en">A calculation tool for evaluating candidates.</p>
+
                                 <img class="img-responsive img-centered" src="img/portfolio/yourfit-tool.png" alt="">
-                                <p class="info-text">Ferramenta de cáculo desenvolvida para a empresa <a href="https://landing.jobs/">Landing Jobs</a> para ajudar na avaliação de perfis de candidatos na área da programação e tecnologias de informação. Este trabalho foi desenvolvido em HTML, CSS, Javascript e jQuery, inicialmente pensado e contruidos para Desktop foi depois adaptado para uma versão Mobile.</p>
-                                <p>Veja o resultado final no seguinte link <a href="https://landing.jobs/yourfit/calculator">https://landing.jobs/yourfit/calculator</a>.</p>
+                                <p class="info-text pt">Ferramenta de cáculo desenvolvida para a empresa <a href="https://landing.jobs/" target="_blank">Landing Jobs</a> para ajudar na avaliação de perfis de candidatos na área da programação e tecnologias de informação. Este trabalho foi desenvolvido em HTML, CSS, Javascript e jQuery, inicialmente pensado e construidos para Desktop foi depois adaptado para uma versão Mobile.</p>
+                                <p class="pt">Veja o resultado final no seguinte link <br><a href="https://landing.jobs/yourfit/calculator" target="_blank">https://landing.jobs/yourfit/calculator</a>.</p>
+
+                                <p class="info-text en">Calculus tool developed for the <a href="https://landing.jobs/" target="_blank">Landing Jobs</a> company to assist in the evaluation of candidates profiles in the area of ​​programming and information technology. This work was made with  HTML, CSS, Javascript and jQuery, initially designed and built for Desktop, later I adapted it for mobile devices.</p>
+                                <p class="en">See the end result here <br><a href="https://landing.jobs/yourfit/calculator" target="_blank">https://landing.jobs/yourfit/calculator</a>.</p>
                                 
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fa fa-times"></i>
+                                    <span class="pt">Fechar</span>
+                                    <span class="en">Close</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -264,11 +315,18 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Etukminho</h2>
-                                <p class="item-intro text-muted">website Empresarial</p>
+                                <p class="item-intro text-muted pt">Website Empresarial</p>
+                                <p class="item-intro text-muted en">Company Website</p>
+
                                 <img class="img-responsive img-centered" src="img/portfolio/etukminho-preview.png" alt="">
-                                <p class="info-text">Desenvolvimento de um website adaptado a desktop e mobile para a empresa <a href="http://etukminho.pt">Etukminho</a>. Sendo uma empresa focada no turismo este trabalho foi desenvolvido em WordPress para dar maior autonomia na introdução e alteração de conteudo.</p>
+                                <p class="info-text pt">Desenvolvimento de um website adaptado a desktop e mobile para a empresa <a href="http://etukminho.pt" target="_blank">Etukminho</a>. Sendo uma empresa focada no turismo este trabalho foi desenvolvido em WordPress para dar maior autonomia na introdução e alteração de conteúdo.</p>
+                                <p class="info-text en">Development of a responsive website for <a href="http://etukminho.pt" target="_blank">Etukminho</a> Company. As a company focused on tourism this work was developed in WordPress to give greater autonomy to introduce and change content.</p>
                                 
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fa fa-times"></i>
+                                    <span class="pt">Fechar</span>
+                                    <span class="en">Close</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -291,7 +349,11 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
+    <script src="js/agency.js"></script>
     <script src="js/agency.min.js"></script>
+
+    <!-- Morphext JavaScript -->
+    <script src="js/morphext.js"></script>
 
 </body>
 
