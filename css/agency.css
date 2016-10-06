@@ -216,9 +216,8 @@ fieldset[disabled] .btn-xl.active {
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
-  padding: 10px 0;
-  margin: 0 10px;
-  border-bottom:2px solid transparent;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
@@ -244,6 +243,10 @@ fieldset[disabled] .btn-xl.active {
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
     border: none;
+  }
+  .navbar-custom .nav li a {
+    padding: 10px 0;
+    margin: 0 10px;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
